@@ -13,5 +13,5 @@ if(!empty($_FILES['img']['tmp_name'])){
 unset($_POST['table']);
 
 $$db->save($_POST);
-to("../admin.php?do=$title");
+to("../admin.php?do=$table");
 ?>
