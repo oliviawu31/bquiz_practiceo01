@@ -161,3 +161,7 @@ function to($url){
 
 $Title=new DB('titles');
 $Ad=new DB('ads');
+$Mvim=new DB('mvims');
+$Image=new DB('images');
+$News=new DB('news');
+$Admin=new DB('admin');

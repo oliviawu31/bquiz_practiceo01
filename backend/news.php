@@ -13,22 +13,22 @@
         </tbody>
     </table>
     <div style="width:99%; height:87%; margin:auto; overflow:auto; border:#666 1px solid;">
-        <p class="t cent botli">動態文字廣告管理</p>
+        <p class="t cent botli">最新消息資料管理</p>
         <form method="post" target="back" action="./api/edit.php">
             <table width="100%">
                 <tbody>
                     <tr class="yel">
-                        <td width="80%">動態文字廣告</td>
+                        <td width="80%">最新消息資料內容</td>
                         <td width="10%">顯示</td>
                         <td width="10%">刪除</td>
                     </tr>
                     <?php
-                    $rows=$Ad->all();
+                    $rows=$News->all();
                     foreach($rows as $row){
                         ?>
                     <tr>
                         <td>
-                            <input type="text" name="text[]" value="<?=$row['text'];?>" style="width:97%">
+                            <textarea name="text[]" style="width:95%;height:60px"><?=$row['text'];?></textarea>
                         </td>
                         <td>
                             <input type="checkbox" name="sh[]" value="<?=$row['id'];?>"
@@ -54,7 +54,7 @@
                     <tr>
                         <td width="200px"><input type="button"
                                 onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;./modal/<?=$do;?>.php?table=<?=$do;?>&#39;)"
-                                value="新增動態文字廣告">
+                                value="新增最新消息資料">
                         </td>
                         <td class="cent">
                             <input type="hidden" name="table" value="<?=$do;?>">

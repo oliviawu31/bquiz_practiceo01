@@ -11,5 +11,5 @@ if(isset($_FILES['img']['tmp_name'])){
 }
 
 to ("../admin.php?do=title");
-
+ 
 ?>

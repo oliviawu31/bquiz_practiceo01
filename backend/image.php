@@ -24,15 +24,15 @@
                         <td></td>
                     </tr>
                     <?php
-                    $rows=$Title->all();
+                    $rows=$Image->all();
                     foreach($rows as $row){
                         ?>
                     <tr>
                         <td>
-                            <img src="./upload/<?=$row['img'];?> " style="width: 300px;height: 30px;">
+                            <img src="./upload/<?=$row['img'];?> " style="width: 100px;height: 68px;">
                         </td>
                         <td>
-                            <input type="checkbox" name="sh" value="<?=$row['id'];?>"
+                            <input type="checkbox" name="sh[]" value="<?=$row['id'];?>"
                                 <?=($row['sh']==1)?'checked':'';?>>
                         </td>
                         <td>

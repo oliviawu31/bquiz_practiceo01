@@ -1,10 +1,10 @@
-<h3 class="cent">新增動畫圖片</h3>
+<h3 class="cent">新增最新消息資料</h3>
 <hr>
 <form action="api/insert.php" method="post" enctype="multipart/form-data">
     <table>
         <tr>
-            <td>動畫圖片：</td>
-            <td><input type="file" name="img" id="img"></td>
+            <td>動態文字廣告：</td>
+            <td><textarea name="text" style="width:300px;height:100px;"></textarea></td>
         </tr>
     </table>
 
