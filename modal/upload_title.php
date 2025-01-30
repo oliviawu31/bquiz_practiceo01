@@ -1,4 +1,4 @@
-<h3 class="cent">更新標題區圖片</h3>
+<h3 class="cent">標題區圖片</h3>
 <hr>
 <form action="api/update_title.php" method="post" enctype="multipart/form-data">
     <table>

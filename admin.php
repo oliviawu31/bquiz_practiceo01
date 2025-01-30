@@ -23,8 +23,10 @@
     </div>
     <iframe style="display:none;" name="back" id="back"></iframe>
     <div id="main">
-        <a title="" href="?">
-            <div class="ti" style="background:url(&#39;use/&#39;); background-size:cover;"></div>
+        <a title="<?=$Title->find(['sh' => 1])['text'];?>" href="index.php">
+            <div class="ti"
+                style="background:url('./upload/<?=$Title->find(['sh' => 1])['img'];?>'); background-size:cover;">
+            </div>
             <!--標題-->
         </a>
         <div id="ms">
@@ -82,7 +84,7 @@
 			include (file_exists($file))?$file:"./backend/title.php";
 	?>
         </div>
-        <div id="alt"
+        <div id=" alt"
             style="position: absolute; width: 350px; min-height: 100px; word-break:break-all; text-align:justify;  background-color: rgb(255, 255, 204); top: 50px; left: 400px; z-index: 99; display: none; padding: 5px; border: 3px double rgb(255, 153, 0); background-position: initial initial; background-repeat: initial initial;">
         </div>
         <script>
