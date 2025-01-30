@@ -165,3 +165,4 @@ $Mvim=new DB('mvims');
 $Image=new DB('images');
 $News=new DB('news');
 $Admin=new DB('admin');
+$Menu=new DB('menus');
